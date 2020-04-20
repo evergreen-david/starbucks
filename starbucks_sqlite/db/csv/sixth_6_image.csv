@@ -1,0 +1,17 @@
+﻿image_url,drink_id
+https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/nitro_vanilla_cream_large.jpg,1
+https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/nitro_vanilla_cream_small.jpg,1
+https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/jeju_forest_cold_large.jpg,2
+https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/jeju_forest_cold_small.jpg,2
+https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/coconut_white_cold_brew_large.jpg,3
+https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/coconut_white_cold_brew_small.jpg,3
+https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/nitro_chocolat_cloud_large.jpg,4
+https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/nitro_chocolat_cloud_small.jpg,4
+https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/cold_brew_malt_large.jpg,5
+https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/cold_brew_malt_small.jpg,5
+https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/iced_coffee_large.jpg,6
+https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/iced_coffee_small.jpg,6
+https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/todays_coffee_large.jpg,7
+https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/todays_coffee_small.jpg,7
+https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/espresso_con_panna_large.jpg,8
+https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/espresso_con_panna_small.jpg,8
