@@ -1177,3 +1177,487 @@
 2020-05-07 06:52:39,532 DEBUG (0.000) SELECT "allergies"."id", "allergies"."name" FROM "allergies" WHERE "allergies"."id" = 1 LIMIT 21; args=(1,)
 2020-05-07 06:52:39,533 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 8 LIMIT 21; args=(8,)
 2020-05-07 06:52:39,534 DEBUG (0.001) INSERT INTO "allergies_drinks" ("allergy_id", "drink_id") VALUES (1, 8); args=[1, 8]
+2020-07-21 03:42:55,495 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id", "categories"."id", "categories"."name", "categories"."menu_id" FROM "drinks" LEFT OUTER JOIN "categories" ON ("drinks"."category_id" = "categories"."id"); args=()
+2020-07-21 03:43:29,252 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 03:43:29,253 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 03:43:29,254 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 03:43:29,254 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 03:43:29,255 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 03:43:29,256 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 03:43:29,256 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 03:43:29,257 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:19:59,361 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:19:59,363 DEBUG (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+2020-07-21 04:33:56,783 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:33:56,785 DEBUG (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+2020-07-21 04:33:57,042 DEBUG (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:33:57,043 DEBUG (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+2020-07-21 04:33:57,044 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:33:57,044 DEBUG (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+2020-07-21 04:33:57,063 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:33:57,063 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:33:57,064 DEBUG (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+2020-07-21 04:33:57,065 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2020-07-21 04:33:57,065 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+2020-07-21 04:33:57,066 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'product'; args=('product',)
+2020-07-21 04:33:57,301 DEBUG (0.001) INSERT INTO "menus" ("name") VALUES ('음료'); args=['음료']
+2020-07-21 04:33:57,302 DEBUG (0.001) INSERT INTO "menus" ("name") VALUES ('푸드'); args=['푸드']
+2020-07-21 04:33:57,303 DEBUG (0.001) INSERT INTO "menus" ("name") VALUES ('상품'); args=['상품']
+2020-07-21 04:33:57,304 DEBUG (0.001) INSERT INTO "menus" ("name") VALUES ('카드'); args=['카드']
+2020-07-21 04:33:57,307 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:33:57,308 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('콜드 브루 커피', 1); args=['콜드 브루 커피', 1]
+2020-07-21 04:33:57,308 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:33:57,310 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('브루드 커피', 1); args=['브루드 커피', 1]
+2020-07-21 04:33:57,310 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:33:57,311 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('에스프레소', 1); args=['에스프레소', 1]
+2020-07-21 04:33:57,312 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:33:57,313 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('프라푸치노', 1); args=['프라푸치노', 1]
+2020-07-21 04:33:57,313 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:33:57,314 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('블렌디드', 1); args=['블렌디드', 1]
+2020-07-21 04:33:57,315 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:33:57,315 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('스타벅스 피지오', 1); args=['스타벅스 피지오', 1]
+2020-07-21 04:33:57,316 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:33:57,317 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('티(티바나)', 1); args=['티(티바나)', 1]
+2020-07-21 04:33:57,317 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:33:57,318 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('기타 제조 음료', 1); args=['기타 제조 음료', 1]
+2020-07-21 04:33:57,319 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:33:57,319 DEBUG (0.000) INSERT INTO "categories" ("name", "menu_id") VALUES ('스타벅스 주스(병음료)', 1); args=['스타벅스 주스(병음료)', 1]
+2020-07-21 04:33:57,320 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:33:57,321 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('베이커리', 2); args=['베이커리', 2]
+2020-07-21 04:33:57,321 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:33:57,322 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('케이크', 2); args=['케이크', 2]
+2020-07-21 04:33:57,323 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:33:57,324 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('샌드위치 & 샐러드', 2); args=['샌드위치 & 샐러드', 2]
+2020-07-21 04:33:57,325 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:33:57,325 DEBUG (0.000) INSERT INTO "categories" ("name", "menu_id") VALUES ('따뜻한 푸드', 2); args=['따뜻한 푸드', 2]
+2020-07-21 04:33:57,326 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:33:57,327 DEBUG (0.000) INSERT INTO "categories" ("name", "menu_id") VALUES ('과일 & 요거트', 2); args=['과일 & 요거트', 2]
+2020-07-21 04:33:57,327 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:33:57,328 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('스낵 & 미니 디저트', 2); args=['스낵 & 미니 디저트', 2]
+2020-07-21 04:33:57,328 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:33:57,329 DEBUG (0.000) INSERT INTO "categories" ("name", "menu_id") VALUES ('아이스크림', 2); args=['아이스크림', 2]
+2020-07-21 04:33:57,332 DEBUG (0.001) INSERT INTO "nutritions" ("one_serving_kcal", "sodium_mg", "saturated_fat_g", "sugars_g", "protein_g", "caffeine_mg") VALUES ('75.00', '20.00', '2.00', '10.00', '1.00', '245.00'); args=['75.00', '20.00', '2.00', '10.00', '1.00', '245.00']
+2020-07-21 04:33:57,333 DEBUG (0.001) INSERT INTO "nutritions" ("one_serving_kcal", "sodium_mg", "saturated_fat_g", "sugars_g", "protein_g", "caffeine_mg") VALUES ('340.00', '115.00', '8.00', '44.00', '10.00', '105.00'); args=['340.00', '115.00', '8.00', '44.00', '10.00', '105.00']
+2020-07-21 04:33:57,334 DEBUG (0.000) INSERT INTO "nutritions" ("one_serving_kcal", "sodium_mg", "saturated_fat_g", "sugars_g", "protein_g", "caffeine_mg") VALUES ('415.00', '65.00', '15.00', '19.00', '5.00', '150.00'); args=['415.00', '65.00', '15.00', '19.00', '5.00', '150.00']
+2020-07-21 04:33:57,334 DEBUG (0.000) INSERT INTO "nutritions" ("one_serving_kcal", "sodium_mg", "saturated_fat_g", "sugars_g", "protein_g", "caffeine_mg") VALUES ('55.00', '20.00', '2.00', '7.00', '1.00', '245.00'); args=['55.00', '20.00', '2.00', '7.00', '1.00', '245.00']
+2020-07-21 04:33:57,335 DEBUG (0.001) INSERT INTO "nutritions" ("one_serving_kcal", "sodium_mg", "saturated_fat_g", "sugars_g", "protein_g", "caffeine_mg") VALUES ('510.00', '147.80', '20.00', '40.00', '10.00', '150.00'); args=['510.00', '147.80', '20.00', '40.00', '10.00', '150.00']
+2020-07-21 04:33:57,336 DEBUG (0.001) INSERT INTO "nutritions" ("one_serving_kcal", "sodium_mg", "saturated_fat_g", "sugars_g", "protein_g", "caffeine_mg") VALUES ('5.00', '10.00', '0.00', '0.00', '0.00', '140.00'); args=['5.00', '10.00', '0.00', '0.00', '0.00', '140.00']
+2020-07-21 04:33:57,337 DEBUG (0.000) INSERT INTO "nutritions" ("one_serving_kcal", "sodium_mg", "saturated_fat_g", "sugars_g", "protein_g", "caffeine_mg") VALUES ('5.00', '10.00', '0.00', '0.00', '0.00', '260.00'); args=['5.00', '10.00', '0.00', '0.00', '0.00', '260.00']
+2020-07-21 04:33:57,338 DEBUG (0.000) INSERT INTO "nutritions" ("one_serving_kcal", "sodium_mg", "saturated_fat_g", "sugars_g", "protein_g", "caffeine_mg") VALUES ('30.00', '0.00', '1.50', '1.00', '0.00', '75.00'); args=['30.00', '0.00', '1.50', '1.00', '0.00', '75.00']
+2020-07-21 04:33:57,338 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:33:57,339 DEBUG (0.000) SELECT "categories"."id", "categories"."name", "categories"."menu_id" FROM "categories" WHERE "categories"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:33:57,339 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:33:57,340 DEBUG (0.000) INSERT INTO "drinks" ("name", "menu_id", "category_id", "nutrition_id") VALUES ('나이트로 바닐라 크림', 1, 1, 1); args=['나이트로 바닐라 크림', 1, 1, 1]
+2020-07-21 04:34:17,407 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:34:17,658 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:34:17,658 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:34:17,659 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:34:17,659 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-07-21 04:34:17,659 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-07-21 04:34:17,659 DEBUG (0.000) BEGIN; args=None
+2020-07-21 04:34:17,659 DEBUG CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params None)
+2020-07-21 04:34:17,660 DEBUG (0.000) CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); args=None
+2020-07-21 04:34:17,660 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-07-21 04:34:17,660 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-07-21 04:34:17,661 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-07-21 04:34:17,661 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-07-21 04:34:17,661 DEBUG (0.000) BEGIN; args=None
+2020-07-21 04:34:17,662 DEBUG CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+2020-07-21 04:34:17,663 DEBUG (0.000) CREATE TABLE "django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(100) NOT NULL, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); args=None
+2020-07-21 04:34:17,663 DEBUG CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+2020-07-21 04:34:17,664 DEBUG (0.000) CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); args=()
+2020-07-21 04:34:17,664 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:34:17,665 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('contenttypes', '0001_initial', '2020-07-21 04:34:17.664400'); args=['contenttypes', '0001_initial', '2020-07-21 04:34:17.664400']
+2020-07-21 04:34:17,665 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-07-21 04:34:17,666 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-07-21 04:34:17,666 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-07-21 04:34:17,666 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-07-21 04:34:17,666 DEBUG (0.000) BEGIN; args=None
+2020-07-21 04:34:17,668 DEBUG CREATE TABLE "new__django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, "name" varchar(100) NULL); (params None)
+2020-07-21 04:34:17,668 DEBUG (0.000) CREATE TABLE "new__django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL, "name" varchar(100) NULL); args=None
+2020-07-21 04:34:17,668 DEBUG INSERT INTO "new__django_content_type" ("id", "app_label", "model", "name") SELECT "id", "app_label", "model", "name" FROM "django_content_type"; (params ())
+2020-07-21 04:34:17,669 DEBUG (0.000) INSERT INTO "new__django_content_type" ("id", "app_label", "model", "name") SELECT "id", "app_label", "model", "name" FROM "django_content_type"; args=()
+2020-07-21 04:34:17,669 DEBUG DROP TABLE "django_content_type"; (params ())
+2020-07-21 04:34:17,669 DEBUG (0.000) DROP TABLE "django_content_type"; args=()
+2020-07-21 04:34:17,669 DEBUG ALTER TABLE "new__django_content_type" RENAME TO "django_content_type"; (params ())
+2020-07-21 04:34:17,670 DEBUG (0.000) ALTER TABLE "new__django_content_type" RENAME TO "django_content_type"; args=()
+2020-07-21 04:34:17,670 DEBUG CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+2020-07-21 04:34:17,670 DEBUG (0.000) CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); args=()
+2020-07-21 04:34:17,672 DEBUG CREATE TABLE "new__django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); (params None)
+2020-07-21 04:34:17,672 DEBUG (0.000) CREATE TABLE "new__django_content_type" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app_label" varchar(100) NOT NULL, "model" varchar(100) NOT NULL); args=None
+2020-07-21 04:34:17,672 DEBUG INSERT INTO "new__django_content_type" ("id", "app_label", "model") SELECT "id", "app_label", "model" FROM "django_content_type"; (params ())
+2020-07-21 04:34:17,672 DEBUG (0.000) INSERT INTO "new__django_content_type" ("id", "app_label", "model") SELECT "id", "app_label", "model" FROM "django_content_type"; args=()
+2020-07-21 04:34:17,672 DEBUG DROP TABLE "django_content_type"; (params ())
+2020-07-21 04:34:17,672 DEBUG (0.000) DROP TABLE "django_content_type"; args=()
+2020-07-21 04:34:17,672 DEBUG ALTER TABLE "new__django_content_type" RENAME TO "django_content_type"; (params ())
+2020-07-21 04:34:17,673 DEBUG (0.000) ALTER TABLE "new__django_content_type" RENAME TO "django_content_type"; args=()
+2020-07-21 04:34:17,673 DEBUG CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); (params ())
+2020-07-21 04:34:17,673 DEBUG (0.000) CREATE UNIQUE INDEX "django_content_type_app_label_model_76bd3d3b_uniq" ON "django_content_type" ("app_label", "model"); args=()
+2020-07-21 04:34:17,673 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:34:17,673 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('contenttypes', '0002_remove_content_type_name', '2020-07-21 04:34:17.673554'); args=['contenttypes', '0002_remove_content_type_name', '2020-07-21 04:34:17.673554']
+2020-07-21 04:34:17,674 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-07-21 04:34:17,674 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-07-21 04:34:17,675 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-07-21 04:34:17,675 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-07-21 04:34:17,675 DEBUG (0.000) BEGIN; args=None
+2020-07-21 04:34:17,675 DEBUG CREATE TABLE "allergies" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(45) NOT NULL); (params None)
+2020-07-21 04:34:17,676 DEBUG (0.000) CREATE TABLE "allergies" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(45) NOT NULL); args=None
+2020-07-21 04:34:17,677 DEBUG CREATE TABLE "allergies_drinks" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "allergy_id" integer NULL REFERENCES "allergies" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+2020-07-21 04:34:17,677 DEBUG (0.000) CREATE TABLE "allergies_drinks" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "allergy_id" integer NULL REFERENCES "allergies" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
+2020-07-21 04:34:17,678 DEBUG CREATE TABLE "categories" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL); (params None)
+2020-07-21 04:34:17,678 DEBUG (0.000) CREATE TABLE "categories" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL); args=None
+2020-07-21 04:34:17,680 DEBUG CREATE TABLE "drinks" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "category_id" integer NULL REFERENCES "categories" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+2020-07-21 04:34:17,681 DEBUG (0.000) CREATE TABLE "drinks" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "category_id" integer NULL REFERENCES "categories" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
+2020-07-21 04:34:17,681 DEBUG CREATE TABLE "menus" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(10) NOT NULL); (params None)
+2020-07-21 04:34:17,681 DEBUG (0.000) CREATE TABLE "menus" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(10) NOT NULL); args=None
+2020-07-21 04:34:17,682 DEBUG CREATE TABLE "nutritions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "one_serving_kcal" decimal NOT NULL, "sodium_mg" decimal NOT NULL, "saturated_fat_g" decimal NOT NULL, "sugars_g" decimal NOT NULL, "protein_g" decimal NOT NULL, "caffeine_mg" decimal NOT NULL); (params None)
+2020-07-21 04:34:17,683 DEBUG (0.000) CREATE TABLE "nutritions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "one_serving_kcal" decimal NOT NULL, "sodium_mg" decimal NOT NULL, "saturated_fat_g" decimal NOT NULL, "sugars_g" decimal NOT NULL, "protein_g" decimal NOT NULL, "caffeine_mg" decimal NOT NULL); args=None
+2020-07-21 04:34:17,684 DEBUG CREATE TABLE "sizes" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(45) NOT NULL, "size_ml" integer NOT NULL, "size_fluid_ounce" decimal NOT NULL, "nutrition_id" integer NULL REFERENCES "nutritions" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+2020-07-21 04:34:17,684 DEBUG (0.000) CREATE TABLE "sizes" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(45) NOT NULL, "size_ml" integer NOT NULL, "size_fluid_ounce" decimal NOT NULL, "nutrition_id" integer NULL REFERENCES "nutritions" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
+2020-07-21 04:34:17,687 DEBUG CREATE TABLE "images" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "image_url" varchar(2000) NOT NULL, "drink_id" integer NULL REFERENCES "drinks" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+2020-07-21 04:34:17,687 DEBUG (0.000) CREATE TABLE "images" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "image_url" varchar(2000) NOT NULL, "drink_id" integer NULL REFERENCES "drinks" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
+2020-07-21 04:34:17,690 DEBUG CREATE TABLE "new__drinks" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "category_id" integer NULL REFERENCES "categories" ("id") DEFERRABLE INITIALLY DEFERRED, "menu_id" integer NULL REFERENCES "menus" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+2020-07-21 04:34:17,690 DEBUG (0.000) CREATE TABLE "new__drinks" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "category_id" integer NULL REFERENCES "categories" ("id") DEFERRABLE INITIALLY DEFERRED, "menu_id" integer NULL REFERENCES "menus" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
+2020-07-21 04:34:17,691 DEBUG INSERT INTO "new__drinks" ("id", "name", "category_id", "menu_id") SELECT "id", "name", "category_id", NULL FROM "drinks"; (params ())
+2020-07-21 04:34:17,691 DEBUG (0.000) INSERT INTO "new__drinks" ("id", "name", "category_id", "menu_id") SELECT "id", "name", "category_id", NULL FROM "drinks"; args=()
+2020-07-21 04:34:17,691 DEBUG DROP TABLE "drinks"; (params ())
+2020-07-21 04:34:17,691 DEBUG (0.000) DROP TABLE "drinks"; args=()
+2020-07-21 04:34:17,691 DEBUG ALTER TABLE "new__drinks" RENAME TO "drinks"; (params ())
+2020-07-21 04:34:17,692 DEBUG (0.001) ALTER TABLE "new__drinks" RENAME TO "drinks"; args=()
+2020-07-21 04:34:17,692 DEBUG CREATE INDEX "allergies_drinks_allergy_id_3af7f50a" ON "allergies_drinks" ("allergy_id"); (params ())
+2020-07-21 04:34:17,692 DEBUG (0.000) CREATE INDEX "allergies_drinks_allergy_id_3af7f50a" ON "allergies_drinks" ("allergy_id"); args=()
+2020-07-21 04:34:17,692 DEBUG CREATE INDEX "sizes_nutrition_id_d80af765" ON "sizes" ("nutrition_id"); (params ())
+2020-07-21 04:34:17,693 DEBUG (0.000) CREATE INDEX "sizes_nutrition_id_d80af765" ON "sizes" ("nutrition_id"); args=()
+2020-07-21 04:34:17,693 DEBUG CREATE INDEX "images_drink_id_fb25e2ef" ON "images" ("drink_id"); (params ())
+2020-07-21 04:34:17,693 DEBUG (0.000) CREATE INDEX "images_drink_id_fb25e2ef" ON "images" ("drink_id"); args=()
+2020-07-21 04:34:17,693 DEBUG CREATE INDEX "drinks_category_id_c8b598f6" ON "drinks" ("category_id"); (params ())
+2020-07-21 04:34:17,693 DEBUG (0.000) CREATE INDEX "drinks_category_id_c8b598f6" ON "drinks" ("category_id"); args=()
+2020-07-21 04:34:17,693 DEBUG CREATE INDEX "drinks_menu_id_0ef95499" ON "drinks" ("menu_id"); (params ())
+2020-07-21 04:34:17,693 DEBUG (0.000) CREATE INDEX "drinks_menu_id_0ef95499" ON "drinks" ("menu_id"); args=()
+2020-07-21 04:34:17,698 DEBUG CREATE TABLE "new__drinks" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "category_id" integer NULL REFERENCES "categories" ("id") DEFERRABLE INITIALLY DEFERRED, "menu_id" integer NULL REFERENCES "menus" ("id") DEFERRABLE INITIALLY DEFERRED, "nutrition_id" integer NULL UNIQUE REFERENCES "nutritions" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+2020-07-21 04:34:17,698 DEBUG (0.000) CREATE TABLE "new__drinks" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "category_id" integer NULL REFERENCES "categories" ("id") DEFERRABLE INITIALLY DEFERRED, "menu_id" integer NULL REFERENCES "menus" ("id") DEFERRABLE INITIALLY DEFERRED, "nutrition_id" integer NULL UNIQUE REFERENCES "nutritions" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
+2020-07-21 04:34:17,699 DEBUG INSERT INTO "new__drinks" ("id", "name", "category_id", "menu_id", "nutrition_id") SELECT "id", "name", "category_id", "menu_id", NULL FROM "drinks"; (params ())
+2020-07-21 04:34:17,699 DEBUG (0.000) INSERT INTO "new__drinks" ("id", "name", "category_id", "menu_id", "nutrition_id") SELECT "id", "name", "category_id", "menu_id", NULL FROM "drinks"; args=()
+2020-07-21 04:34:17,699 DEBUG DROP TABLE "drinks"; (params ())
+2020-07-21 04:34:17,699 DEBUG (0.000) DROP TABLE "drinks"; args=()
+2020-07-21 04:34:17,699 DEBUG ALTER TABLE "new__drinks" RENAME TO "drinks"; (params ())
+2020-07-21 04:34:17,700 DEBUG (0.001) ALTER TABLE "new__drinks" RENAME TO "drinks"; args=()
+2020-07-21 04:34:17,700 DEBUG CREATE INDEX "drinks_category_id_c8b598f6" ON "drinks" ("category_id"); (params ())
+2020-07-21 04:34:17,700 DEBUG (0.000) CREATE INDEX "drinks_category_id_c8b598f6" ON "drinks" ("category_id"); args=()
+2020-07-21 04:34:17,700 DEBUG CREATE INDEX "drinks_menu_id_0ef95499" ON "drinks" ("menu_id"); (params ())
+2020-07-21 04:34:17,700 DEBUG (0.000) CREATE INDEX "drinks_menu_id_0ef95499" ON "drinks" ("menu_id"); args=()
+2020-07-21 04:34:17,704 DEBUG CREATE TABLE "descriptions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "description" varchar(1000) NOT NULL, "drink_id" integer NULL REFERENCES "drinks" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+2020-07-21 04:34:17,704 DEBUG (0.000) CREATE TABLE "descriptions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "description" varchar(1000) NOT NULL, "drink_id" integer NULL REFERENCES "drinks" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
+2020-07-21 04:34:17,709 DEBUG CREATE TABLE "new__categories" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "menu_id" integer NULL REFERENCES "menus" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+2020-07-21 04:34:17,709 DEBUG (0.000) CREATE TABLE "new__categories" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "name" varchar(50) NOT NULL, "menu_id" integer NULL REFERENCES "menus" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
+2020-07-21 04:34:17,709 DEBUG INSERT INTO "new__categories" ("id", "name", "menu_id") SELECT "id", "name", NULL FROM "categories"; (params ())
+2020-07-21 04:34:17,710 DEBUG (0.000) INSERT INTO "new__categories" ("id", "name", "menu_id") SELECT "id", "name", NULL FROM "categories"; args=()
+2020-07-21 04:34:17,710 DEBUG DROP TABLE "categories"; (params ())
+2020-07-21 04:34:17,710 DEBUG (0.000) DROP TABLE "categories"; args=()
+2020-07-21 04:34:17,710 DEBUG ALTER TABLE "new__categories" RENAME TO "categories"; (params ())
+2020-07-21 04:34:17,711 DEBUG (0.001) ALTER TABLE "new__categories" RENAME TO "categories"; args=()
+2020-07-21 04:34:17,711 DEBUG CREATE INDEX "descriptions_drink_id_7164a2c3" ON "descriptions" ("drink_id"); (params ())
+2020-07-21 04:34:17,711 DEBUG (0.000) CREATE INDEX "descriptions_drink_id_7164a2c3" ON "descriptions" ("drink_id"); args=()
+2020-07-21 04:34:17,711 DEBUG CREATE INDEX "categories_menu_id_33730ae9" ON "categories" ("menu_id"); (params ())
+2020-07-21 04:34:17,711 DEBUG (0.000) CREATE INDEX "categories_menu_id_33730ae9" ON "categories" ("menu_id"); args=()
+2020-07-21 04:34:17,716 DEBUG CREATE TABLE "new__allergies_drinks" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "allergy_id" integer NULL REFERENCES "allergies" ("id") DEFERRABLE INITIALLY DEFERRED, "drink_id" integer NULL REFERENCES "drinks" ("id") DEFERRABLE INITIALLY DEFERRED); (params None)
+2020-07-21 04:34:17,716 DEBUG (0.000) CREATE TABLE "new__allergies_drinks" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "allergy_id" integer NULL REFERENCES "allergies" ("id") DEFERRABLE INITIALLY DEFERRED, "drink_id" integer NULL REFERENCES "drinks" ("id") DEFERRABLE INITIALLY DEFERRED); args=None
+2020-07-21 04:34:17,717 DEBUG INSERT INTO "new__allergies_drinks" ("id", "allergy_id", "drink_id") SELECT "id", "allergy_id", NULL FROM "allergies_drinks"; (params ())
+2020-07-21 04:34:17,717 DEBUG (0.000) INSERT INTO "new__allergies_drinks" ("id", "allergy_id", "drink_id") SELECT "id", "allergy_id", NULL FROM "allergies_drinks"; args=()
+2020-07-21 04:34:17,717 DEBUG DROP TABLE "allergies_drinks"; (params ())
+2020-07-21 04:34:17,717 DEBUG (0.000) DROP TABLE "allergies_drinks"; args=()
+2020-07-21 04:34:17,717 DEBUG ALTER TABLE "new__allergies_drinks" RENAME TO "allergies_drinks"; (params ())
+2020-07-21 04:34:17,718 DEBUG (0.001) ALTER TABLE "new__allergies_drinks" RENAME TO "allergies_drinks"; args=()
+2020-07-21 04:34:17,718 DEBUG CREATE INDEX "allergies_drinks_allergy_id_3af7f50a" ON "allergies_drinks" ("allergy_id"); (params ())
+2020-07-21 04:34:17,718 DEBUG (0.000) CREATE INDEX "allergies_drinks_allergy_id_3af7f50a" ON "allergies_drinks" ("allergy_id"); args=()
+2020-07-21 04:34:17,718 DEBUG CREATE INDEX "allergies_drinks_drink_id_f07b9299" ON "allergies_drinks" ("drink_id"); (params ())
+2020-07-21 04:34:17,718 DEBUG (0.000) CREATE INDEX "allergies_drinks_drink_id_f07b9299" ON "allergies_drinks" ("drink_id"); args=()
+2020-07-21 04:34:17,719 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:34:17,720 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('product', '0001_initial', '2020-07-21 04:34:17.719196'); args=['product', '0001_initial', '2020-07-21 04:34:17.719196']
+2020-07-21 04:34:17,720 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-07-21 04:34:17,721 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-07-21 04:34:17,721 DEBUG (0.000) PRAGMA foreign_keys = OFF; args=None
+2020-07-21 04:34:17,721 DEBUG (0.000) PRAGMA foreign_keys; args=None
+2020-07-21 04:34:17,722 DEBUG (0.000) BEGIN; args=None
+2020-07-21 04:34:17,722 DEBUG CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); (params None)
+2020-07-21 04:34:17,723 DEBUG (0.000) CREATE TABLE "django_session" ("session_key" varchar(40) NOT NULL PRIMARY KEY, "session_data" text NOT NULL, "expire_date" datetime NOT NULL); args=None
+2020-07-21 04:34:17,723 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:34:17,723 DEBUG (0.000) INSERT INTO "django_migrations" ("app", "name", "applied") VALUES ('sessions', '0001_initial', '2020-07-21 04:34:17.723585'); args=['sessions', '0001_initial', '2020-07-21 04:34:17.723585']
+2020-07-21 04:34:17,723 DEBUG (0.000) PRAGMA foreign_key_check; args=None
+2020-07-21 04:34:17,724 DEBUG CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); (params ())
+2020-07-21 04:34:17,724 DEBUG (0.000) CREATE INDEX "django_session_expire_date_a5c62663" ON "django_session" ("expire_date"); args=()
+2020-07-21 04:34:17,724 DEBUG (0.000) PRAGMA foreign_keys = ON; args=None
+2020-07-21 04:34:17,725 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:34:17,725 DEBUG (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+2020-07-21 04:34:17,736 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'contenttypes'; args=('contenttypes',)
+2020-07-21 04:34:17,737 DEBUG (0.000) BEGIN; args=None
+2020-07-21 04:34:17,737 DEBUG (0.000) INSERT INTO "django_content_type" ("app_label", "model") SELECT 'contenttypes', 'contenttype'; args=('contenttypes', 'contenttype')
+2020-07-21 04:34:17,738 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'sessions'; args=('sessions',)
+2020-07-21 04:34:17,738 DEBUG (0.000) BEGIN; args=None
+2020-07-21 04:34:17,739 DEBUG (0.000) INSERT INTO "django_content_type" ("app_label", "model") SELECT 'sessions', 'session'; args=('sessions', 'session')
+2020-07-21 04:34:17,740 DEBUG (0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE "django_content_type"."app_label" = 'product'; args=('product',)
+2020-07-21 04:34:17,740 DEBUG (0.000) BEGIN; args=None
+2020-07-21 04:34:17,741 DEBUG (0.000) INSERT INTO "django_content_type" ("app_label", "model") SELECT 'product', 'allergy' UNION ALL SELECT 'product', 'allergydrink' UNION ALL SELECT 'product', 'category' UNION ALL SELECT 'product', 'drink' UNION ALL SELECT 'product', 'menu' UNION ALL SELECT 'product', 'nutrition' UNION ALL SELECT 'product', 'size' UNION ALL SELECT 'product', 'image' UNION ALL SELECT 'product', 'description'; args=('product', 'allergy', 'product', 'allergydrink', 'product', 'category', 'product', 'drink', 'product', 'menu', 'product', 'nutrition', 'product', 'size', 'product', 'image', 'product', 'description')
+2020-07-21 04:34:17,967 DEBUG (0.002) INSERT INTO "menus" ("name") VALUES ('음료'); args=['음료']
+2020-07-21 04:34:17,968 DEBUG (0.001) INSERT INTO "menus" ("name") VALUES ('푸드'); args=['푸드']
+2020-07-21 04:34:17,969 DEBUG (0.001) INSERT INTO "menus" ("name") VALUES ('상품'); args=['상품']
+2020-07-21 04:34:17,970 DEBUG (0.001) INSERT INTO "menus" ("name") VALUES ('카드'); args=['카드']
+2020-07-21 04:34:17,971 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:17,972 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('콜드 브루 커피', 1); args=['콜드 브루 커피', 1]
+2020-07-21 04:34:17,973 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:17,974 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('브루드 커피', 1); args=['브루드 커피', 1]
+2020-07-21 04:34:17,975 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:17,976 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('에스프레소', 1); args=['에스프레소', 1]
+2020-07-21 04:34:17,977 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:17,978 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('프라푸치노', 1); args=['프라푸치노', 1]
+2020-07-21 04:34:17,979 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:17,980 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('블렌디드', 1); args=['블렌디드', 1]
+2020-07-21 04:34:17,981 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:17,982 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('스타벅스 피지오', 1); args=['스타벅스 피지오', 1]
+2020-07-21 04:34:17,982 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:17,983 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('티(티바나)', 1); args=['티(티바나)', 1]
+2020-07-21 04:34:17,984 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:17,984 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('기타 제조 음료', 1); args=['기타 제조 음료', 1]
+2020-07-21 04:34:17,985 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:17,986 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('스타벅스 주스(병음료)', 1); args=['스타벅스 주스(병음료)', 1]
+2020-07-21 04:34:17,986 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:34:17,987 DEBUG (0.000) INSERT INTO "categories" ("name", "menu_id") VALUES ('베이커리', 2); args=['베이커리', 2]
+2020-07-21 04:34:17,987 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:34:17,988 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('케이크', 2); args=['케이크', 2]
+2020-07-21 04:34:17,989 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:34:17,990 DEBUG (0.000) INSERT INTO "categories" ("name", "menu_id") VALUES ('샌드위치 & 샐러드', 2); args=['샌드위치 & 샐러드', 2]
+2020-07-21 04:34:17,990 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:34:17,991 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('따뜻한 푸드', 2); args=['따뜻한 푸드', 2]
+2020-07-21 04:34:17,991 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:34:17,992 DEBUG (0.000) INSERT INTO "categories" ("name", "menu_id") VALUES ('과일 & 요거트', 2); args=['과일 & 요거트', 2]
+2020-07-21 04:34:17,993 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:34:17,994 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('스낵 & 미니 디저트', 2); args=['스낵 & 미니 디저트', 2]
+2020-07-21 04:34:17,994 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:34:17,995 DEBUG (0.001) INSERT INTO "categories" ("name", "menu_id") VALUES ('아이스크림', 2); args=['아이스크림', 2]
+2020-07-21 04:34:17,997 DEBUG (0.001) INSERT INTO "nutritions" ("one_serving_kcal", "sodium_mg", "saturated_fat_g", "sugars_g", "protein_g", "caffeine_mg") VALUES ('75.00', '20.00', '2.00', '10.00', '1.00', '245.00'); args=['75.00', '20.00', '2.00', '10.00', '1.00', '245.00']
+2020-07-21 04:34:17,998 DEBUG (0.001) INSERT INTO "nutritions" ("one_serving_kcal", "sodium_mg", "saturated_fat_g", "sugars_g", "protein_g", "caffeine_mg") VALUES ('340.00', '115.00', '8.00', '44.00', '10.00', '105.00'); args=['340.00', '115.00', '8.00', '44.00', '10.00', '105.00']
+2020-07-21 04:34:17,999 DEBUG (0.001) INSERT INTO "nutritions" ("one_serving_kcal", "sodium_mg", "saturated_fat_g", "sugars_g", "protein_g", "caffeine_mg") VALUES ('415.00', '65.00', '15.00', '19.00', '5.00', '150.00'); args=['415.00', '65.00', '15.00', '19.00', '5.00', '150.00']
+2020-07-21 04:34:18,000 DEBUG (0.001) INSERT INTO "nutritions" ("one_serving_kcal", "sodium_mg", "saturated_fat_g", "sugars_g", "protein_g", "caffeine_mg") VALUES ('55.00', '20.00', '2.00', '7.00', '1.00', '245.00'); args=['55.00', '20.00', '2.00', '7.00', '1.00', '245.00']
+2020-07-21 04:34:18,001 DEBUG (0.000) INSERT INTO "nutritions" ("one_serving_kcal", "sodium_mg", "saturated_fat_g", "sugars_g", "protein_g", "caffeine_mg") VALUES ('510.00', '147.80', '20.00', '40.00', '10.00', '150.00'); args=['510.00', '147.80', '20.00', '40.00', '10.00', '150.00']
+2020-07-21 04:34:18,002 DEBUG (0.001) INSERT INTO "nutritions" ("one_serving_kcal", "sodium_mg", "saturated_fat_g", "sugars_g", "protein_g", "caffeine_mg") VALUES ('5.00', '10.00', '0.00', '0.00', '0.00', '140.00'); args=['5.00', '10.00', '0.00', '0.00', '0.00', '140.00']
+2020-07-21 04:34:18,002 DEBUG (0.001) INSERT INTO "nutritions" ("one_serving_kcal", "sodium_mg", "saturated_fat_g", "sugars_g", "protein_g", "caffeine_mg") VALUES ('5.00', '10.00', '0.00', '0.00', '0.00', '260.00'); args=['5.00', '10.00', '0.00', '0.00', '0.00', '260.00']
+2020-07-21 04:34:18,003 DEBUG (0.001) INSERT INTO "nutritions" ("one_serving_kcal", "sodium_mg", "saturated_fat_g", "sugars_g", "protein_g", "caffeine_mg") VALUES ('30.00', '0.00', '1.50', '1.00', '0.00', '75.00'); args=['30.00', '0.00', '1.50', '1.00', '0.00', '75.00']
+2020-07-21 04:34:18,004 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,005 DEBUG (0.000) SELECT "categories"."id", "categories"."name", "categories"."menu_id" FROM "categories" WHERE "categories"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,005 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,007 DEBUG (0.001) INSERT INTO "drinks" ("name", "menu_id", "category_id", "nutrition_id") VALUES ('나이트로 바닐라 크림', 1, 1, 1); args=['나이트로 바닐라 크림', 1, 1, 1]
+2020-07-21 04:34:18,007 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,008 DEBUG (0.000) SELECT "categories"."id", "categories"."name", "categories"."menu_id" FROM "categories" WHERE "categories"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,008 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:34:18,009 DEBUG (0.001) INSERT INTO "drinks" ("name", "menu_id", "category_id", "nutrition_id") VALUES ('제주 비자림 콜드 브루', 1, 1, 2); args=['제주 비자림 콜드 브루', 1, 1, 2]
+2020-07-21 04:34:18,010 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,010 DEBUG (0.000) SELECT "categories"."id", "categories"."name", "categories"."menu_id" FROM "categories" WHERE "categories"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,011 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 3 LIMIT 21; args=(3,)
+2020-07-21 04:34:18,012 DEBUG (0.001) INSERT INTO "drinks" ("name", "menu_id", "category_id", "nutrition_id") VALUES ('코코넛 화이트 콜드 브루', 1, 1, 3); args=['코코넛 화이트 콜드 브루', 1, 1, 3]
+2020-07-21 04:34:18,013 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,013 DEBUG (0.000) SELECT "categories"."id", "categories"."name", "categories"."menu_id" FROM "categories" WHERE "categories"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,014 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 4 LIMIT 21; args=(4,)
+2020-07-21 04:34:18,015 DEBUG (0.001) INSERT INTO "drinks" ("name", "menu_id", "category_id", "nutrition_id") VALUES ('나이트로 쇼콜라 클라우드', 1, 1, 4); args=['나이트로 쇼콜라 클라우드', 1, 1, 4]
+2020-07-21 04:34:18,015 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,016 DEBUG (0.000) SELECT "categories"."id", "categories"."name", "categories"."menu_id" FROM "categories" WHERE "categories"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,016 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 5 LIMIT 21; args=(5,)
+2020-07-21 04:34:18,017 DEBUG (0.001) INSERT INTO "drinks" ("name", "menu_id", "category_id", "nutrition_id") VALUES ('콜드 브루 몰트', 1, 1, 5); args=['콜드 브루 몰트', 1, 1, 5]
+2020-07-21 04:34:18,018 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,018 DEBUG (0.000) SELECT "categories"."id", "categories"."name", "categories"."menu_id" FROM "categories" WHERE "categories"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:34:18,019 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 6 LIMIT 21; args=(6,)
+2020-07-21 04:34:18,020 DEBUG (0.001) INSERT INTO "drinks" ("name", "menu_id", "category_id", "nutrition_id") VALUES ('아이스 커피', 1, 2, 6); args=['아이스 커피', 1, 2, 6]
+2020-07-21 04:34:18,020 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,021 DEBUG (0.000) SELECT "categories"."id", "categories"."name", "categories"."menu_id" FROM "categories" WHERE "categories"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:34:18,021 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 7 LIMIT 21; args=(7,)
+2020-07-21 04:34:18,022 DEBUG (0.001) INSERT INTO "drinks" ("name", "menu_id", "category_id", "nutrition_id") VALUES ('오늘의 커피', 1, 2, 7); args=['오늘의 커피', 1, 2, 7]
+2020-07-21 04:34:18,023 DEBUG (0.000) SELECT "menus"."id", "menus"."name" FROM "menus" WHERE "menus"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,023 DEBUG (0.000) SELECT "categories"."id", "categories"."name", "categories"."menu_id" FROM "categories" WHERE "categories"."id" = 3 LIMIT 21; args=(3,)
+2020-07-21 04:34:18,024 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 8 LIMIT 21; args=(8,)
+2020-07-21 04:34:18,025 DEBUG (0.001) INSERT INTO "drinks" ("name", "menu_id", "category_id", "nutrition_id") VALUES ('에스프레소 콘 파나', 1, 3, 8); args=['에스프레소 콘 파나', 1, 3, 8]
+2020-07-21 04:34:18,028 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,030 DEBUG (0.001) INSERT INTO "images" ("image_url", "drink_id") VALUES ('https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/nitro_vanilla_cream_large.jpg', 1); args=['https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/nitro_vanilla_cream_large.jpg', 1]
+2020-07-21 04:34:18,030 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,031 DEBUG (0.001) INSERT INTO "images" ("image_url", "drink_id") VALUES ('https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/nitro_vanilla_cream_small.jpg', 1); args=['https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/nitro_vanilla_cream_small.jpg', 1]
+2020-07-21 04:34:18,032 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:34:18,032 DEBUG (0.001) INSERT INTO "images" ("image_url", "drink_id") VALUES ('https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/jeju_forest_cold_large.jpg', 2); args=['https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/jeju_forest_cold_large.jpg', 2]
+2020-07-21 04:34:18,033 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:34:18,034 DEBUG (0.000) INSERT INTO "images" ("image_url", "drink_id") VALUES ('https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/jeju_forest_cold_small.jpg', 2); args=['https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/jeju_forest_cold_small.jpg', 2]
+2020-07-21 04:34:18,034 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 3 LIMIT 21; args=(3,)
+2020-07-21 04:34:18,035 DEBUG (0.001) INSERT INTO "images" ("image_url", "drink_id") VALUES ('https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/coconut_white_cold_brew_large.jpg', 3); args=['https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/coconut_white_cold_brew_large.jpg', 3]
+2020-07-21 04:34:18,036 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 3 LIMIT 21; args=(3,)
+2020-07-21 04:34:18,037 DEBUG (0.001) INSERT INTO "images" ("image_url", "drink_id") VALUES ('https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/coconut_white_cold_brew_small.jpg', 3); args=['https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/coconut_white_cold_brew_small.jpg', 3]
+2020-07-21 04:34:18,037 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 4 LIMIT 21; args=(4,)
+2020-07-21 04:34:18,038 DEBUG (0.001) INSERT INTO "images" ("image_url", "drink_id") VALUES ('https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/nitro_chocolat_cloud_large.jpg', 4); args=['https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/nitro_chocolat_cloud_large.jpg', 4]
+2020-07-21 04:34:18,038 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 4 LIMIT 21; args=(4,)
+2020-07-21 04:34:18,039 DEBUG (0.001) INSERT INTO "images" ("image_url", "drink_id") VALUES ('https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/nitro_chocolat_cloud_small.jpg', 4); args=['https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/nitro_chocolat_cloud_small.jpg', 4]
+2020-07-21 04:34:18,040 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 5 LIMIT 21; args=(5,)
+2020-07-21 04:34:18,041 DEBUG (0.001) INSERT INTO "images" ("image_url", "drink_id") VALUES ('https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/cold_brew_malt_large.jpg', 5); args=['https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/cold_brew_malt_large.jpg', 5]
+2020-07-21 04:34:18,041 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 5 LIMIT 21; args=(5,)
+2020-07-21 04:34:18,043 DEBUG (0.001) INSERT INTO "images" ("image_url", "drink_id") VALUES ('https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/cold_brew_malt_small.jpg', 5); args=['https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/cold_brew_malt_small.jpg', 5]
+2020-07-21 04:34:18,044 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 6 LIMIT 21; args=(6,)
+2020-07-21 04:34:18,045 DEBUG (0.001) INSERT INTO "images" ("image_url", "drink_id") VALUES ('https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/iced_coffee_large.jpg', 6); args=['https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/iced_coffee_large.jpg', 6]
+2020-07-21 04:34:18,045 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 6 LIMIT 21; args=(6,)
+2020-07-21 04:34:18,046 DEBUG (0.001) INSERT INTO "images" ("image_url", "drink_id") VALUES ('https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/iced_coffee_small.jpg', 6); args=['https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/iced_coffee_small.jpg', 6]
+2020-07-21 04:34:18,047 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 7 LIMIT 21; args=(7,)
+2020-07-21 04:34:18,048 DEBUG (0.001) INSERT INTO "images" ("image_url", "drink_id") VALUES ('https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/todays_coffee_large.jpg', 7); args=['https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/todays_coffee_large.jpg', 7]
+2020-07-21 04:34:18,048 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 7 LIMIT 21; args=(7,)
+2020-07-21 04:34:18,049 DEBUG (0.001) INSERT INTO "images" ("image_url", "drink_id") VALUES ('https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/todays_coffee_small.jpg', 7); args=['https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/todays_coffee_small.jpg', 7]
+2020-07-21 04:34:18,050 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 8 LIMIT 21; args=(8,)
+2020-07-21 04:34:18,051 DEBUG (0.001) INSERT INTO "images" ("image_url", "drink_id") VALUES ('https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/espresso_con_panna_large.jpg', 8); args=['https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/espresso_con_panna_large.jpg', 8]
+2020-07-21 04:34:18,051 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 8 LIMIT 21; args=(8,)
+2020-07-21 04:34:18,052 DEBUG (0.001) INSERT INTO "images" ("image_url", "drink_id") VALUES ('https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/espresso_con_panna_small.jpg', 8); args=['https://s3-vugue-test.s3.ap-northeast-2.amazonaws.com/espresso_con_panna_small.jpg', 8]
+2020-07-21 04:34:18,053 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,054 DEBUG (0.001) INSERT INTO "descriptions" ("description", "drink_id") VALUES ('부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에 느껴보세요!', 1); args=['부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에 느껴보세요!', 1]
+2020-07-21 04:34:18,054 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,055 DEBUG (0.000) INSERT INTO "descriptions" ("description", "drink_id") VALUES ('부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에 느껴보세요!', 1); args=['부드러운 목넘김의 나이트로 커피와 바닐라 크림의 매력을 한번에 느껴보세요!', 1]
+2020-07-21 04:34:18,055 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:34:18,056 DEBUG (0.001) INSERT INTO "descriptions" ("description", "drink_id") VALUES ('[제주지역 한정음료] 제주 천년의 숲 비자림을 연상시키는
+음료로 제주에서 유기농 말차로 만든
+파우더와 Cold Brew를 활용한 음료.
+더욱 시원하고 새로운 Cold Brew를 제주에서 즐겨보세요.', 2); args=['[제주지역 한정음료] 제주 천년의 숲 비자림을 연상시키는\n음료로 제주에서 유기농 말차로 만든\n파우더와 Cold Brew를 활용한 음료.\n더욱 시원하고 새로운 Cold Brew를 제주에서 즐겨보세요.', 2]
+2020-07-21 04:34:18,057 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:34:18,058 DEBUG (0.001) INSERT INTO "descriptions" ("description", "drink_id") VALUES ('[제주지역 한정음료] 제주 천년의 숲 비자림을 연상시키는
+음료로 제주에서 유기농 말차로 만든 파우더와 Cold Brew를 활용한 음료.
+더욱 시원하고 새로운 Cold Brew를 제주에서 즐겨보세요.', 2); args=['[제주지역 한정음료] 제주 천년의 숲 비자림을 연상시키는\n음료로 제주에서 유기농 말차로 만든 파우더와 Cold Brew를 활용한 음료.\n더욱 시원하고 새로운 Cold Brew를 제주에서 즐겨보세요.', 2]
+2020-07-21 04:34:18,058 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 3 LIMIT 21; args=(3,)
+2020-07-21 04:34:18,060 DEBUG (0.001) INSERT INTO "descriptions" ("description", "drink_id") VALUES ('고소한 코코넛과 정성스레 내린 콜드 브루와의 풍미좋은 만남
+코코넛으로 만든 달콤하고 부드러운 크림 폼과 콜드 브루의 감칠맛이 깔끔하게 올라오는,
+코코넛 화이트 콜드브루', 3); args=['고소한 코코넛과 정성스레 내린 콜드 브루와의 풍미좋은 만남\n코코넛으로 만든 달콤하고 부드러운 크림 폼과 콜드 브루의 감칠맛이 깔끔하게 올라오는,\n코코넛 화이트 콜드브루', 3]
+2020-07-21 04:34:18,061 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 3 LIMIT 21; args=(3,)
+2020-07-21 04:34:18,062 DEBUG (0.001) INSERT INTO "descriptions" ("description", "drink_id") VALUES ('고소한 코코넛과 정성스레 내린 콜드 브루와의 풍미좋은 만남
+코코넛으로 만든 달콤하고 부드러운 크림 폼과 콜드 브루의 감칠맛이 깔끔하게 올라오는,
+코코넛 화이트 콜드브루', 3); args=['고소한 코코넛과 정성스레 내린 콜드 브루와의 풍미좋은 만남\n코코넛으로 만든 달콤하고 부드러운 크림 폼과 콜드 브루의 감칠맛이 깔끔하게 올라오는,\n코코넛 화이트 콜드브루', 3]
+2020-07-21 04:34:18,062 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 4 LIMIT 21; args=(4,)
+2020-07-21 04:34:18,063 DEBUG (0.001) INSERT INTO "descriptions" ("description", "drink_id") VALUES ('초콜릿과 견과류의 풍미, 초콜릿 파우더 토핑, 하프&하프 샷
+부드럽고 달콤한 새로운 나이트로 콜드 브루', 4); args=['초콜릿과 견과류의 풍미, 초콜릿 파우더 토핑, 하프&하프 샷\n부드럽고 달콤한 새로운 나이트로 콜드 브루', 4]
+2020-07-21 04:34:18,064 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 4 LIMIT 21; args=(4,)
+2020-07-21 04:34:18,065 DEBUG (0.001) INSERT INTO "descriptions" ("description", "drink_id") VALUES ('차가운 물로 14시간 동안 서서히 완성된 콜드 브루가 질소와 만나
+나이트로 커피 정통의 캐스케이딩과 부드러운 콜드 크레마를 탄생시켰습니다.', 4); args=['차가운 물로 14시간 동안 서서히 완성된 콜드 브루가 질소와 만나\n나이트로 커피 정통의 캐스케이딩과 부드러운 콜드 크레마를 탄생시켰습니다.', 4]
+2020-07-21 04:34:18,065 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 5 LIMIT 21; args=(5,)
+2020-07-21 04:34:18,066 DEBUG (0.001) INSERT INTO "descriptions" ("description", "drink_id") VALUES ('[리저브 전용음료] 리저브 콜드 브루, 바닐라 아이스크림, 몰트가 블렌딩된 리저브만의 쉐이크', 5); args=['[리저브 전용음료] 리저브 콜드 브루, 바닐라 아이스크림, 몰트가 블렌딩된 리저브만의 쉐이크', 5]
+2020-07-21 04:34:18,067 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 5 LIMIT 21; args=(5,)
+2020-07-21 04:34:18,068 DEBUG (0.001) INSERT INTO "descriptions" ("description", "drink_id") VALUES ('커피 매스터의 14시간 정성으로 추출한 리저브 콜드 브루와
+뉴질랜드산 프리미엄 바닐라 아이스크림 그리고 몰트를 블렌딩한 리저브만의 쉐이크 음료입니다.', 5); args=['커피 매스터의 14시간 정성으로 추출한 리저브 콜드 브루와\n뉴질랜드산 프리미엄 바닐라 아이스크림 그리고 몰트를 블렌딩한 리저브만의 쉐이크 음료입니다.', 5]
+2020-07-21 04:34:18,068 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 6 LIMIT 21; args=(6,)
+2020-07-21 04:34:18,069 DEBUG (0.001) INSERT INTO "descriptions" ("description", "drink_id") VALUES ('깔끔하고 상큼함이 특징인 시원한 아이스 커피', 6); args=['깔끔하고 상큼함이 특징인 시원한 아이스 커피', 6]
+2020-07-21 04:34:18,070 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 6 LIMIT 21; args=(6,)
+2020-07-21 04:34:18,070 DEBUG (0.001) INSERT INTO "descriptions" ("description", "drink_id") VALUES ('케냐, 하우스 블렌드 등 약간의 산미가 있는 커피를 드립 방식으로 추출한 후 얼음과 함께 제공하는 커피 입니다. 아이스 커피로 적합한 프리미엄 원두를 이용하여 깔끔하고 상큼한 맛을 느끼실 수 있습니다.', 6); args=['케냐, 하우스 블렌드 등 약간의 산미가 있는 커피를 드립 방식으로 추출한 후 얼음과 함께 제공하는 커피 입니다. 아이스 커피로 적합한 프리미엄 원두를 이용하여 깔끔하고 상큼한 맛을 느끼실 수 있습니다.', 6]
+2020-07-21 04:34:18,071 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 7 LIMIT 21; args=(7,)
+2020-07-21 04:34:18,072 DEBUG (0.000) INSERT INTO "descriptions" ("description", "drink_id") VALUES ('신선하게 브루드(Brewed)되어 원두의 다양함이 살아있는 커피', 7); args=['신선하게 브루드(Brewed)되어 원두의 다양함이 살아있는 커피', 7]
+2020-07-21 04:34:18,072 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 7 LIMIT 21; args=(7,)
+2020-07-21 04:34:18,073 DEBUG (0.001) INSERT INTO "descriptions" ("description", "drink_id") VALUES ('매주 일주일 간격으로 하나의 원두 종류를 선정하여 신선하게 브루드(Brewed)되어 제공되는 드립커피로 원두 커피의 풍부한 맛과 향을 따뜻하게 즐기실 수 있습니다.', 7); args=['매주 일주일 간격으로 하나의 원두 종류를 선정하여 신선하게 브루드(Brewed)되어 제공되는 드립커피로 원두 커피의 풍부한 맛과 향을 따뜻하게 즐기실 수 있습니다.', 7]
+2020-07-21 04:34:18,074 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 8 LIMIT 21; args=(8,)
+2020-07-21 04:34:18,075 DEBUG (0.001) INSERT INTO "descriptions" ("description", "drink_id") VALUES ('에스프레소 샷에 풍부한 휘핑크림을 얹은 강렬하고 달콤한 음료', 8); args=['에스프레소 샷에 풍부한 휘핑크림을 얹은 강렬하고 달콤한 음료', 8]
+2020-07-21 04:34:18,076 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 8 LIMIT 21; args=(8,)
+2020-07-21 04:34:18,077 DEBUG (0.001) INSERT INTO "descriptions" ("description", "drink_id") VALUES ('신선한 에스프레소 샷에 풍부한 휘핑크림을 얹은 커피 음료로서, 뜨거운 커피의 맛과 차갑고 달콤한 생크림의 맛을 동시에 즐기실 수 있습니다.', 8); args=['신선한 에스프레소 샷에 풍부한 휘핑크림을 얹은 커피 음료로서, 뜨거운 커피의 맛과 차갑고 달콤한 생크림의 맛을 동시에 즐기실 수 있습니다.', 8]
+2020-07-21 04:34:18,080 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,081 DEBUG (0.001) INSERT INTO "sizes" ("name", "size_ml", "size_fluid_ounce", "nutrition_id") VALUES ('Tall(톨)', 355, '12.00', 1); args=['Tall(톨)', 355, '12.00', 1]
+2020-07-21 04:34:18,082 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:34:18,083 DEBUG (0.001) INSERT INTO "sizes" ("name", "size_ml", "size_fluid_ounce", "nutrition_id") VALUES ('Grande(그란데)', 473, '16.00', 2); args=['Grande(그란데)', 473, '16.00', 2]
+2020-07-21 04:34:18,083 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 3 LIMIT 21; args=(3,)
+2020-07-21 04:34:18,084 DEBUG (0.001) INSERT INTO "sizes" ("name", "size_ml", "size_fluid_ounce", "nutrition_id") VALUES ('Tall(톨)', 355, '12.00', 3); args=['Tall(톨)', 355, '12.00', 3]
+2020-07-21 04:34:18,085 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 4 LIMIT 21; args=(4,)
+2020-07-21 04:34:18,086 DEBUG (0.000) INSERT INTO "sizes" ("name", "size_ml", "size_fluid_ounce", "nutrition_id") VALUES ('Tall(톨)', 355, '12.00', 4); args=['Tall(톨)', 355, '12.00', 4]
+2020-07-21 04:34:18,086 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 5 LIMIT 21; args=(5,)
+2020-07-21 04:34:18,087 DEBUG (0.001) INSERT INTO "sizes" ("name", "size_ml", "size_fluid_ounce", "nutrition_id") VALUES ('Tall(톨)', 355, '12.00', 5); args=['Tall(톨)', 355, '12.00', 5]
+2020-07-21 04:34:18,088 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 6 LIMIT 21; args=(6,)
+2020-07-21 04:34:18,089 DEBUG (0.001) INSERT INTO "sizes" ("name", "size_ml", "size_fluid_ounce", "nutrition_id") VALUES ('Tall(톨)', 355, '12.00', 6); args=['Tall(톨)', 355, '12.00', 6]
+2020-07-21 04:34:18,089 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 7 LIMIT 21; args=(7,)
+2020-07-21 04:34:18,090 DEBUG (0.001) INSERT INTO "sizes" ("name", "size_ml", "size_fluid_ounce", "nutrition_id") VALUES ('Tall(톨)', 355, '12.00', 7); args=['Tall(톨)', 355, '12.00', 7]
+2020-07-21 04:34:18,091 DEBUG (0.000) SELECT "nutritions"."id", "nutritions"."one_serving_kcal", "nutritions"."sodium_mg", "nutritions"."saturated_fat_g", "nutritions"."sugars_g", "nutritions"."protein_g", "nutritions"."caffeine_mg" FROM "nutritions" WHERE "nutritions"."id" = 8 LIMIT 21; args=(8,)
+2020-07-21 04:34:18,093 DEBUG (0.001) INSERT INTO "sizes" ("name", "size_ml", "size_fluid_ounce", "nutrition_id") VALUES ('Solo(솔로)', 22, '0.75', 8); args=['Solo(솔로)', 22, '0.75', 8]
+2020-07-21 04:34:18,095 DEBUG (0.001) INSERT INTO "allergies" ("name") VALUES ('우유'); args=['우유']
+2020-07-21 04:34:18,096 DEBUG (0.000) INSERT INTO "allergies" ("name") VALUES ('대두 / 우유'); args=['대두 / 우유']
+2020-07-21 04:34:18,097 DEBUG (0.000) SELECT "allergies"."id", "allergies"."name" FROM "allergies" WHERE "allergies"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,097 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,098 DEBUG (0.001) INSERT INTO "allergies_drinks" ("allergy_id", "drink_id") VALUES (1, 1); args=[1, 1]
+2020-07-21 04:34:18,099 DEBUG (0.000) SELECT "allergies"."id", "allergies"."name" FROM "allergies" WHERE "allergies"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,099 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 4 LIMIT 21; args=(4,)
+2020-07-21 04:34:18,100 DEBUG (0.001) INSERT INTO "allergies_drinks" ("allergy_id", "drink_id") VALUES (1, 4); args=[1, 4]
+2020-07-21 04:34:18,100 DEBUG (0.000) SELECT "allergies"."id", "allergies"."name" FROM "allergies" WHERE "allergies"."id" = 2 LIMIT 21; args=(2,)
+2020-07-21 04:34:18,101 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 5 LIMIT 21; args=(5,)
+2020-07-21 04:34:18,102 DEBUG (0.000) INSERT INTO "allergies_drinks" ("allergy_id", "drink_id") VALUES (2, 5); args=[2, 5]
+2020-07-21 04:34:18,102 DEBUG (0.000) SELECT "allergies"."id", "allergies"."name" FROM "allergies" WHERE "allergies"."id" = 1 LIMIT 21; args=(1,)
+2020-07-21 04:34:18,102 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."id" = 8 LIMIT 21; args=(8,)
+2020-07-21 04:34:18,103 DEBUG (0.001) INSERT INTO "allergies_drinks" ("allergy_id", "drink_id") VALUES (1, 8); args=[1, 8]
+2020-07-21 04:34:23,789 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:34:23,790 DEBUG (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+2020-07-21 04:35:20,753 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:35:20,754 DEBUG (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+2020-07-21 04:35:43,403 DEBUG (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+2020-07-21 04:35:43,405 DEBUG (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=()
+2020-07-21 04:35:56,236 DEBUG (0.000) SELECT "categories"."id", "categories"."name", "categories"."menu_id" FROM "categories"; args=()
+2020-07-21 04:35:56,237 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE "drinks"."category_id" IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16); args=(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16)
+2020-07-21 04:35:56,242 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 1 AND "drinks"."category_id" = 1); args=(1, 1)
+2020-07-21 04:35:56,243 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 2 AND "drinks"."category_id" = 1); args=(2, 1)
+2020-07-21 04:35:56,243 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 3 AND "drinks"."category_id" = 1); args=(3, 1)
+2020-07-21 04:35:56,244 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 4 AND "drinks"."category_id" = 1); args=(4, 1)
+2020-07-21 04:35:56,245 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 5 AND "drinks"."category_id" = 1); args=(5, 1)
+2020-07-21 04:35:56,245 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 6 AND "drinks"."category_id" = 1); args=(6, 1)
+2020-07-21 04:35:56,246 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 7 AND "drinks"."category_id" = 1); args=(7, 1)
+2020-07-21 04:35:56,246 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 8 AND "drinks"."category_id" = 1); args=(8, 1)
+2020-07-21 04:35:56,247 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 9 AND "drinks"."category_id" = 1); args=(9, 1)
+2020-07-21 04:35:56,248 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 10 AND "drinks"."category_id" = 1); args=(10, 1)
+2020-07-21 04:35:56,248 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 11 AND "drinks"."category_id" = 1); args=(11, 1)
+2020-07-21 04:35:56,249 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 12 AND "drinks"."category_id" = 1); args=(12, 1)
+2020-07-21 04:35:56,250 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 13 AND "drinks"."category_id" = 1); args=(13, 1)
+2020-07-21 04:35:56,250 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 14 AND "drinks"."category_id" = 1); args=(14, 1)
+2020-07-21 04:35:56,251 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 15 AND "drinks"."category_id" = 1); args=(15, 1)
+2020-07-21 04:35:56,251 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 16 AND "drinks"."category_id" = 1); args=(16, 1)
+2020-07-21 04:39:59,813 DEBUG (0.000) SELECT "categories"."id", "categories"."name", "categories"."menu_id" FROM "categories"; args=()
+2020-07-21 04:39:59,814 DEBUG (0.000) SELECT "drinks"."id", "drinks"."name", "drinks"."menu_id", "drinks"."category_id", "drinks"."nutrition_id" FROM "drinks" WHERE ("drinks"."category_id" = 1 AND "drinks"."category_id" IN (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16)); args=(1, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16)
+2020-07-21 04:44:50,615 DEBUG (0.000) SELECT "categories"."id", "categories"."name", "categories"."menu_id" FROM "categories" WHERE "categories"."id" = 1 LIMIT 21; args=(1,)
